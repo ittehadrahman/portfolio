@@ -2,9 +2,9 @@
 import React, { useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
-import logo from '../../assets/logo.svg';
-import menu_open from '../../assets/menu_open.svg';
-import menu_close from '../../assets/menu_close.svg';
+import logo from '../../../public/assets/logo.svg';
+import menu_open from '../../../public/assets/menu_open.svg';
+import menu_close from '../../../public/assets/menu_close.svg';
 
 function Navbar() {
   const [menu, setMenu] = useState("home");
@@ -18,10 +18,10 @@ function Navbar() {
   return (
     <div className='navbar'>
       {/* <img src={logo} alt="logo" /> */}
-      <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open'/>
+      {/* <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open'/> */}
       <ul ref={menuRef} className="nav-menu">
         <li>
-          <img src={menu_close} onClick={closeMenu} alt="" className='nav-mob-close'/>
+          {/* <img src={menu_close} onClick={closeMenu} alt="" className='nav-mob-close'/> */}
         </li>
         <li>
           <ScrollLink className={`anchor-link ${menu === "home" ? "active" : ""}`} to='home' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setMenu("home")}>

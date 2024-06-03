@@ -22,7 +22,8 @@
   z-index: -1;
 }
 .contact-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 150px;
 }
 .contact-left {
@@ -107,4 +108,19 @@
 .contact-submit:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-section input {
+    max-width: 80%;
+  }
 }
