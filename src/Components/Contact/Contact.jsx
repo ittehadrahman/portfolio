@@ -1,6 +1,6 @@
 import "./Contact.css"
 import theme_pattern from "../../../public/assets/theme_pattern.svg"
-import mail_icon from "../../../public/assets/icon.svg"
+import mail_icon from "../../../public/assets/mail_icon.svg"
 import call_icon from "../../../public/assets/call_icon.svg"
 import location_icon from "../../../public/assets/location_icon.svg"
 
