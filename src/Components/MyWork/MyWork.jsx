@@ -8,12 +8,15 @@ function MyWork() {
       <>
         <div id="work" className='mywork'>
             <div className="mywork-title">
-                <h1>My Latest Work</h1>
+                <h1>Projects</h1>
                 <img src={theme_pattern} alt="" />
             </div>
             <div className="mywork-container">
                 {mywork_data.map((work, index)=>{
-                    return <img key={index} src={work.w_img} alt="" />
+                    return <><div className="container"><div className="name">{work.w_name}</div>
+                    <div className="desc">{work.w_desc}</div>
+                    <div className="link"><a href={work.w_link}><img src={arrow_icon} alt="" /></a></div>
+                    </div></>
                 })}
             </div>
             {/* <div className="mywork-showmore">

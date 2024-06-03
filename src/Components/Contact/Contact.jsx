@@ -7,28 +7,28 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 import mywork_data from "../../assets/mywork_data"
 
 function Contact() {
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
+    // const onSubmit = async (event) => {
+    //     event.preventDefault();
+    //     const formData = new FormData(event.target);
     
-        formData.append("access_key", "546e73ca-1db1-42e2-90d9-cde1d3b21531");
+    //     formData.append("access_key", "546e73ca-1db1-42e2-90d9-cde1d3b21531");
     
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+    //     const object = Object.fromEntries(formData);
+    //     const json = JSON.stringify(object);
     
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-          },
-          body: json
-        }).then((res) => res.json());
+    //     const res = await fetch("https://api.web3forms.com/submit", {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //         Accept: "application/json"
+    //       },
+    //       body: json
+    //     }).then((res) => res.json());
     
-        if (res.success) {
-          alert(res.message);
-        }
-      };
+    //     if (res.success) {
+    //       alert(res.message);
+    //     }
+    //   };
     return (
       <>
         <div id="contact" className='contact'>
@@ -55,7 +55,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <form onSubmit={onSubmit} className="contact-right">
+                <form  className="contact-right">
                     <label htmlFor="">Your Name</label>
                     <input type="text" placeholder="Enter your name" name="name"/>
                     <label htmlFor="">Your Email</label>
