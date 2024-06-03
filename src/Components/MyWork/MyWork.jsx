@@ -1,8 +1,8 @@
 import "./MyWork.css"
-import theme_pattern from "../../assets/theme_pattern.svg"
+import theme_pattern from "../../../public/assets/theme_pattern.svg"
 
-import arrow_icon from '../../assets/arrow_icon.svg'
-import mywork_data from "../../assets/mywork_data"
+import arrow_icon from '../../../public/assets/arrow_icon.svg'
+import mywork_data from "../../../public/assets/mywork_data"
 function MyWork() {
     return (
       <>

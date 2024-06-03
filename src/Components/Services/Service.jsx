@@ -1,8 +1,7 @@
 import "./Service.css"
-import theme_pattern from "../../assets/theme_pattern.svg"
+import theme_pattern from "../../../public/assets/theme_pattern.svg"
 
-import arrow_icon from '../../assets/arrow_icon.svg'
-import Services_Data from "../../assets/services_data"
+import Services_Data from "../../../public/assets/services_data"
 function Service() {
     return (
       <>

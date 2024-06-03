@@ -1,10 +1,7 @@
-
 import React, { useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
-import logo from '../../../public/assets/logo.svg';
-import menu_open from '../../../public/assets/menu_open.svg';
-import menu_close from '../../../public/assets/menu_close.svg';
+
 
 function Navbar() {
   const [menu, setMenu] = useState("home");

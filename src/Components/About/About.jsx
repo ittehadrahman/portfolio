@@ -1,6 +1,5 @@
 import "./About.css"
-import theme_pattern from "../../assets/theme_pattern.svg"
-import profile_img from '../../assets/dp.jpg'
+import theme_pattern from "../../../public/assets/theme_pattern.svg"
 
 function About() {
     return (
